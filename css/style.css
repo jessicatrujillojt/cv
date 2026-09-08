@@ -1,0 +1,145 @@
+body {
+  margin: 0;
+  }
+
+/****************   Nav Section **********************/
+nav {
+	background-color:darkolivegreen;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #f7f3eb;
+  display:flex;
+  justify-content:space-between;
+}
+
+/***********************  Footer Section   **************************/
+footer {
+	background-color:darkolivegreen;
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+}
+
+/*********** Splash Page ************************/
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: #ede9de;
+}
+
+header h1 {
+  font-size: 42px;
+  text-shadow: 2px 2px 4px #cccccc;
+  letter-spacing: 2px;
+  color: #6B4A2F;
+  font-family: "Montserrat", sans-serif;
+}
+
+header img {
+  border-radius: 50%;
+}
+
+.address {
+  text-align: center;
+  font-size: 18px;
+  font-style: italic;
+  color: #6B4A2F;
+}
+
+.tagline {
+  text-align: center;
+  font-size: 16px;
+  font-style: italic;
+  margin: 20px;
+}
+
+/************* Sections ********************/
+hr {
+
+}
+
+section h3 {
+  color: #6B4A2F;
+  margin: 30px;
+  font-family: "Montserrat", sans-serif;
+}
+
+section dl {
+  display: grid;
+  grid-template-columns: max-content max-content;
+  column-gap: 40px;
+  row-gap: 8px;
+}
+
+section ul {
+  list-style-type: square;
+  padding-left: 25px;
+}
+
+section a {
+  color: #6B4A2F;
+  text-decoration: none;
+}
+
+section a:hover {
+  color: darkolivegreen;
+  font-weight: bold;
+}
+
+/**************   Projects   *****************/
+.three-col {
+	display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.card img {
+  width: 100%;
+  max-width: 200px;
+  display: block;
+}
+
+.card {
+  background-color: #f7f3eb;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px #cccccc;
+}
+
+/**************   Responsiveness   *****************/
+@media (max-width: 680px) {
+    nav {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .three-col {
+      grid-template-columns: 1fr;
+      justify-items: center;
+    }
+}
+
+/**************   Contact Page   *****************/
+.one-col {
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+}
+.one-col form {
+  display:flex;
+  flex-direction: column;
+  gap:10px;
+}
+
+input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #6B4A2F;
+}
+
+textarea {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #6B4A2F;
+}
